@@ -25,7 +25,7 @@ export default function App() {
           <h1 className="font-oswald text-3xl lg:text-4xl font-semibold text-slate-950">PENDIDIKAN</h1>
           <hr />
           <ul className="list-disc list-inside">
-            <li className="font-oswald font-semibold text-slate-950">SMKN 4 KOTA TANGERANG (2022 - SEKARNANG)</li>
+            <li className="font-oswald font-semibold text-slate-950">SMKN 4 KOTA TANGERANG (2022 - SEKARANG)</li>
           </ul>
         </div>
         <div className="w-full flex flex-col gap-y-2">
