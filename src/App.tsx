@@ -1,117 +1,14 @@
+import { library } from "@fortawesome/fontawesome-svg-core"
+import Sidebar from "./components/Sidebar"
+import { fas } from "@fortawesome/free-solid-svg-icons"
+import { far } from "@fortawesome/free-regular-svg-icons"
+
+library.add(fas, far)
+
 export default function App() {
   return (
     <div className="w-full h-screen grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      <div className="w-full h-full bg-blue-900 flex flex-col gap-y-5 px-3 py-5">
-        <img src="fotoDiri.webp" alt="Foto Saya Sendiri" className="w-36 mx-auto overflow-hidden object-cover object-center rounded-full border-2 border-white" width="385" height="385" />
-        <div className="w-full flex flex-col gap-y-2">
-          <h1 className="font-oswald text-lg lg:text-xl font-semibold text-white">Kontak</h1>
-          <hr />
-          <span className="flex gap-x-2 items-center">
-            <i className="fa-sharp fa-solid fa-envelope fa-lg text-white fa-fw basis-1/12"></i>
-            <p className="font-oswald text-white grow basis-11/12">adamakmal789@gmail.com</p>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <i className="fa-sharp fa-solid fa-phone fa-lg text-white fa-fw basis-1/12"></i>
-            <p className="font-oswald text-white grow basis-11/12">+62 882 1427 7094</p>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <i className="fa-sharp fa-solid fa-location-dot fa-lg text-white fa-fw basis-1/12"></i>
-            <p className="font-oswald text-white grow basis-11/12">Jl. Jaro Miran No. 217, Cibodas, Tangerang - 15138</p>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <i className="fa-sharp fa-solid fa-globe fa-lg text-white fa-fw basis-1/12"></i>
-            <p className="font-oswald text-white grow basis-11/12">malma.my.id</p>
-          </span>
-        </div>
-        <div className="w-full flex flex-col gap-y-2">
-          <h1 className="font-oswald text-lg lg:text-xl font-semibold text-white">Kemampuan</h1>
-          <hr />
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">Go</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">C#</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">TypeScript</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star-half-stroke fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">JavaScript</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-        </div>
-        <div className="w-full flex flex-col gap-y-2">
-          <h1 className="font-oswald text-lg lg:text-xl font-semibold text-white">Bahasa</h1>
-          <hr />
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">Indonesia</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">Inggris</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">Jerman</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-solid fa-star-half-stroke fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-          <span className="flex gap-x-2 items-center">
-            <p className="font-oswald text-white basis-1/2">Polski</p>
-            <span className="flex gap-x-1 items-center basis-1/2">
-              <i className="fa-sharp fa-solid fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-              <i className="fa-sharp fa-regular fa-star fa-lg text-white fa-fw"></i>
-            </span>
-          </span>
-        </div>
-      </div>
+      <Sidebar />
       <div className="w-full h-full flex flex-col gap-y-8 p-5 md:col-span-2 lg:col-span-3 xl:col-span-4">
         <div className="w-full flex flex-col gap-y-2">
           <h1 className="font-oswald text-5xl lg:text-6xl font-semibold text-slate-950">ADAM AKMAL MADANI</h1>
