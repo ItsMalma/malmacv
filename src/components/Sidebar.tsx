@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SidebarSection } from "./SidebarSection";
-import { SidebarSectionItemIcon } from "./SidebarSectionItemIcon";
-import { SidebarSectionItemStars, SidebarSectionStarType } from "./SidebarSectionItemStars";
+import { SidebarSection } from "./sidebars/SidebarSection";
+import { SidebarSectionItemIcon } from "./sidebars/SidebarSectionItemIcon";
+import { SidebarSectionItemStars, SidebarSectionStarType } from "./sidebars/SidebarSectionItemStars";
 
 export function Sidebar() {
   return (

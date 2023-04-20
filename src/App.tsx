@@ -1,7 +1,7 @@
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { fas } from "@fortawesome/free-solid-svg-icons"
 import { far } from "@fortawesome/free-regular-svg-icons"
-import { Sidebar } from "./components/sidebars/Sidebar"
+import { Sidebar } from "./components/Sidebar"
 
 library.add(fas, far)
 
