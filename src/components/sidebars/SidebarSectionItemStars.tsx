@@ -21,11 +21,11 @@ export function SidebarSectionItemStars(props: SidebarSectionItemStarsProps) {
         {props.stars.map((star, index) => {
           switch (star) {
             case SidebarSectionStarType.Full:
-              return <FontAwesomeIcon key={index} className="text-white basis-1/12" icon={["fas", "star"]} size="lg" fixedWidth={true} />
+              return <FontAwesomeIcon key={index} className="text-white basis-1/5" icon={["fas", "star"]} size="lg" fixedWidth={true} />
             case SidebarSectionStarType.Half:
-              return <FontAwesomeIcon key={index} className="text-white basis-1/12" icon={["fas", "star-half-stroke"]} size="lg" fixedWidth={true} />
+              return <FontAwesomeIcon key={index} className="text-white basis-1/5" icon={["fas", "star-half-stroke"]} size="lg" fixedWidth={true} />
             case SidebarSectionStarType.None:
-              return <FontAwesomeIcon key={index} className="text-white basis-1/12" icon={["far", "star"]} size="lg" fixedWidth={true} />
+              return <FontAwesomeIcon key={index} className="text-white basis-1/5" icon={["far", "star"]} size="lg" fixedWidth={true} />
           }
         })}
       </span>
