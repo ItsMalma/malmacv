@@ -4,5 +4,10 @@ import viteCompression from "vite-plugin-compression";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), viteCompression()],
+  plugins: [react(), viteCompression({
+    algorithm: "brotliCompress",
+    deleteOriginFile: true,
+    ext: ".br",
+    threshold: 0
+  })],
 })
