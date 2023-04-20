@@ -32,7 +32,7 @@ Ini akan menghasilkan build pada folder dist.
 
 Jalankan perintah:
 ```bash
-npm run serve
+npm run preview
 ```
 Ini akan menjalankan build pada http://localhost:4173.
 
