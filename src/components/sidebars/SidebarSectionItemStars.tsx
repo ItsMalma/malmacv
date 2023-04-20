@@ -18,14 +18,14 @@ export function SidebarSectionItemStars(props: SidebarSectionItemStarsProps) {
     <SidebarSectionItem>
       <p className="font-oswald text-white basis-1/2">{props.children}</p>
       <span className="flex gap-x-1 items-center justify-end basis-1/2">
-        {props.stars.map(star => {
+        {props.stars.map((star, index) => {
           switch (star) {
             case SidebarSectionStarType.Full:
-              return <FontAwesomeIcon className="text-white basis-1/12" icon={["fas", "star"]} size="lg" fixedWidth={true} />
+              return <FontAwesomeIcon key={index} className="text-white basis-1/12" icon={["fas", "star"]} size="lg" fixedWidth={true} />
             case SidebarSectionStarType.Half:
-              return <FontAwesomeIcon className="text-white basis-1/12" icon={["fas", "star-half-stroke"]} size="lg" fixedWidth={true} />
+              return <FontAwesomeIcon key={index} className="text-white basis-1/12" icon={["fas", "star-half-stroke"]} size="lg" fixedWidth={true} />
             case SidebarSectionStarType.None:
-              return <FontAwesomeIcon className="text-white basis-1/12" icon={["far", "star"]} size="lg" fixedWidth={true} />
+              return <FontAwesomeIcon key={index} className="text-white basis-1/12" icon={["far", "star"]} size="lg" fixedWidth={true} />
           }
         })}
       </span>
